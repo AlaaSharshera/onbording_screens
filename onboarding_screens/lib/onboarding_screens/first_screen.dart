@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:onboarding_screens/components/custom_boldtext.dart';
+import 'package:onboarding_screens/components/custom_button.dart';
+import 'package:onboarding_screens/components/custom_regulartext.dart';
 
 class FirstScreen extends StatelessWidget {
   const FirstScreen({super.key});
@@ -18,47 +21,16 @@ class FirstScreen extends StatelessWidget {
           const SizedBox(
             height: 30,
           ),
-          const Text(
-            "Boost Productivity",
-            style: TextStyle(
-                color: Colors.white, fontSize: 28, fontFamily: "Gilroy"),
-          ),
+          CustomBoldText("Boost Productivity"),
           const SizedBox(
             height: 15,
           ),
-          const Text(
-            "Foc.io helps you boost your productivity\n on a differnet level",
-            textAlign: TextAlign.center,
-            style: TextStyle(
-                color: Colors.white,
-                fontSize: 14,
-                fontFamily: "Gilroy Regular"),
-          ),
+          CustomRegularText(
+              "Foc.io helps you boost your productivity\n on a differnet level"),
           const SizedBox(
             height: 60,
           ),
-          SizedBox(
-            width: 114,
-            height: 54,
-            child: ElevatedButton(
-                onPressed: () {},
-                style: ButtonStyle(
-                  backgroundColor:
-                      const MaterialStatePropertyAll(Color(0xffEF895F)),
-                  shape: MaterialStatePropertyAll(
-                    RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                  ),
-                ),
-                child: const Text(
-                  "Next",
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 16,
-                      color: Colors.white),
-                )),
-          )
+          CustomButton(114, 54, "Next", () {}),
         ],
       ),
     );
