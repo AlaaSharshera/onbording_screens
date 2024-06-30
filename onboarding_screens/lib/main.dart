@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:onboarding_screens/onboarding_screens/first_screen.dart';
-import 'package:onboarding_screens/onboarding_screens/second_screen.dart';
-import 'package:onboarding_screens/onboarding_screens/third_screen.dart';
+import 'package:onboarding_screens/onboarding_screens/onbordingSlider_Screen.dart';
 
 void main() {
   runApp(const OnBoarding());
@@ -12,9 +10,9 @@ class OnBoarding extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ThirdScreen(),
+      home: OnBoardingSlider(),
     );
   }
 }
